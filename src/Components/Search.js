@@ -5,13 +5,12 @@ import React from 'react'
 
 //onKeyPress={search} is only looking for the enter key press in the search function
 
-export const Search = ({ handleInput, search }) => {
+export const Search = ({ searchCall }) => {
     return (
         <div><input type='text'
             placeholder='Search for a movie ...'
             className='searchbox'
-            onChange={handleInput}
-        // onKeyPress={search}
+            onKeyUp={searchCall}
         /></div>
     )
 }

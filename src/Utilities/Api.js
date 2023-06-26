@@ -1,10 +1,10 @@
 import React from 'react'
 import axios from "axios";
-const apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=289f16c7";
+const apiUrl = "http://www.omdbapi.com/?apikey=289f16c7";
 
 export const apiSearch = (search) => {
     let searchUrl = apiUrl + "&s=" + search;
-
+    console.log(searchUrl);
     return new Promise((resolve, reject) => {
         //if no method is provided, GET will be used as the default value.
         axios
@@ -23,8 +23,6 @@ export const apiSearch = (search) => {
             });
     });
 };
-
-
 export const apiOpenPopup = (id) => {
     let searchUrl = apiUrl + "&i=" + id;
 
@@ -44,4 +42,6 @@ export const apiOpenPopup = (id) => {
             });
     });
 };
+
+
 
