@@ -11,14 +11,13 @@ function App() {
   const handleInput = (e) => {
     console.log("handleInput event", e.target.value);
     setSearch(e.target.value);
+
     return { search };
   }
-
 
   return (
 
     <div>
-
       <header>
         <h1>The Movie database</h1>
         <h4>Search, and then click on a movie to see the plot.</h4>
@@ -26,10 +25,7 @@ function App() {
 
       <main>
         <Search handleInput={handleInput} search={search} />
-
       </main>
-
-
     </div>
 
   );
