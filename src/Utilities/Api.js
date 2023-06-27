@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from "axios";
-const apiUrl = "http://www.omdbapi.com/?apikey=289f16c7";
-//http://www.omdbapi.com/?apikey=a6b5580e&s=fish
+const apiUrl = "https://www.omdbapi.com/?apikey=289f16c7";
+//https://www.omdbapi.com/?apikey=a6b5580e&s=fish
 
 export const apiSearch = (search) => {
     let searchUrl = apiUrl + "&s=" + search;
